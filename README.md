@@ -5,8 +5,12 @@ Cloud coverage is an important element in understanding the earth’s atmosphere
 NASA GLOBE Cloud: this dataset provides images of the sky taken by citizens from the ground along with associated metadata such as cloud cover. We collected 120 images (20 for each cloud coverage category– none, mostly clear, isolated, scattered, broken, and overcast) to test our cloud coverage classification  methods.
 ## Methods
 Saturation Thresholding: uses the HSV version of an image1 to distinguish the difference between cloud and sky pixels.
+
 CLAHE  Thresholding: uses Contrast Limited Adaptive Histogram Equalization to enhance differences between cloud and sky pixels.
+
 Blue Channel  Thresholding: uses the blue channel of an image and adaptive thresholding to separate cloud and sky pixels in an image.
-Hybrid Thresholding: Combination of the Saturation (used for scattered, isolated and  broken images), CLAHE (used for overcast images), and Blue Channel (used for none and mostly clear images) thresholding methods
+
+Hybrid Thresholding: Combination of the Saturation (used for scattered, isolated and  broken images), CLAHE (used for overcast images), and Blue Channel (used for none and mostly clear images) thresholding methods.
+
 Morphological Snakes: Image Processing method that utilizes image contours2 in order to separate background and foreground.
 
